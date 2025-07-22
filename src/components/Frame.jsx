@@ -35,6 +35,17 @@ import rectangle4 from "/assets/Rectangle 4.svg";
 import ellipse1 from "/assets/Ellipse 1.svg";
 import xIcon from "/assets/X.svg";
 
+// Импорт портфолио для GitHub Pages
+import detailedImage1 from "/portfolio/detailed/Tracer-Overwatch-Blizzard-8131304.jpeg";
+import detailedImage2 from "/portfolio/detailed/Widowmaker-Overwatch-Blizzard-8589520.png";
+import detailedImage3 from "/portfolio/detailed/Widowmaker-Overwatch-Blizzard-8621882.png";
+import detailedImage4 from "/portfolio/detailed/ZefraBleu-artist-Tomo-Aizawa-7877185.jpeg";
+
+import chibiImage1 from "/portfolio/chibi/Anime-Ero-Anime-фэндомы-6981704.jpeg";
+import chibiImage2 from "/portfolio/chibi/brassica-Kitagawa-Marin-Sono-Bisque-Doll-wa-Koi-wo-Suru-8018332.jpeg";
+import chibiImage3 from "/portfolio/chibi/jackochallenge-Ozen-Made-in-Abyss-7937730.png";
+import chibiImage4 from "/portfolio/chibi/LtsTry-artist-нарисовал-сам-8342003.jpeg";
+
 // Анимационные варианты
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -159,13 +170,9 @@ export const Frame = () => {
   const [modalImage, setModalImage] = useState(null);
 
   // Массивы изображений для слайдеров
-  // Импорт изображений для слайдеров автоматически из папок
-  const detailedImages = Object.values(
-    import.meta.glob('/portfolio/detailed/*.{svg,png,jpg,jpeg}', { eager: true, as: 'url' })
-  );
-  const chibiImages = Object.values(
-    import.meta.glob('/portfolio/chibi/*.{svg,png,jpg,jpeg}', { eager: true, as: 'url' })
-  );
+  // Используем статические импорты для GitHub Pages
+  const detailedImages = [detailedImage1, detailedImage2, detailedImage3, detailedImage4];
+  const chibiImages = [chibiImage1, chibiImage2, chibiImage3, chibiImage4];
 
   useEffect(() => {
     setIsVisible(true);

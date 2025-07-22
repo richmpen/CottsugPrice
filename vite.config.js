@@ -5,4 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/CottsugPrice/',
+  build: {
+    assetsInlineLimit: 0, // Отключаем инлайн ассетов
+    outDir: 'dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
 }) 
