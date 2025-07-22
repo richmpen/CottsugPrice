@@ -1,0 +1,1283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Подключение кастомных шрифтов */
+@font-face {
+  font-family: 'Oi-Regular';
+  src: url('../fonts/Oi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Borsok-Regular';
+  src: url('../fonts/boorsok.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Базовые стили */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+/* Плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Стили из HTML.html */
+.frame {
+  background-color: #f9cbd6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  background-color: #f9cbd6;
+  width: 1440px;
+  height: 5256px;
+  position: relative;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 1294px;
+  height: 1016px;
+  top: -183px;
+  left: 107px;
+}
+
+.frame .image {
+  width: 1239px;
+  height: 697px;
+  top: 319px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 454px;
+  left: 154px;
+  text-shadow: 20px 6px 0px #ff94af;
+  font-family: "Oi-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 208px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .ellipse {
+  position: absolute;
+  width: 346px;
+  height: 347px;
+  top: 648px;
+  left: 446px;
+}
+
+.frame .p {
+  top: 424px;
+  left: 284px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  top: 244px;
+  left: 32px;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 244px;
+  left: 488px;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 244px;
+  left: 984px;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.frame .text-wrapper-5 {
+  top: 932px;
+  left: 756px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-6 {
+  top: 924px;
+  left: 404px;
+  font-family: "Oi-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 7.80px;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-7 {
+  top: 1361px;
+  left: 569px;
+  font-family: "Oi-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 71px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-8 {
+  top: 2569px;
+  left: 466px;
+  font-family: "Oi-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 71px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-9 {
+  top: 3372px;
+  left: 386px;
+  font-family: "Oi-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 71px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 1256px;
+  height: 277px;
+  top: 1456px;
+  left: 91px;
+  background-image: url(/assets/Rectangle\ 1.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .text-wrapper-10 {
+  top: 146px;
+  left: 150px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-11 {
+  top: 146px;
+  left: 564px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-12 {
+  top: 146px;
+  left: 956px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-13 {
+  position: absolute;
+  top: 186px;
+  left: 170px;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-14 {
+  top: 186px;
+  left: 573px;
+  position: absolute;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-15 {
+  top: 186px;
+  left: 933px;
+  position: absolute;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-16 {
+  top: 63px;
+  left: 384px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 49px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .overlap-2 {
+  position: absolute;
+  width: 1256px;
+  height: 277px;
+  top: 2082px;
+  left: 91px;
+  background-image: url(/assets/Rectangle\ 3.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .text-wrapper-17 {
+  top: 164px;
+  left: 121px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #f2e0d2;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-18 {
+  top: 164px;
+  left: 684px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #f2e0d2;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-19 {
+  top: 81px;
+  left: 412px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #f2e0d2;
+  font-size: 49px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .overlap-3 {
+  position: absolute;
+  width: 1256px;
+  height: 277px;
+  top: 1769px;
+  left: 91px;
+  background-image: url(/assets/Rectangle\ 2.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .text-wrapper-20 {
+  top: 149px;
+  left: 150px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-21 {
+  top: 149px;
+  left: 553px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-22 {
+  top: 149px;
+  left: 935px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-23 {
+  top: 189px;
+  left: 170px;
+  position: absolute;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-24 {
+  top: 189px;
+  left: 562px;
+  position: absolute;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-25 {
+  top: 189px;
+  left: 911px;
+  position: absolute;
+  font-family: "Borsok-Regular", Helvetica;
+  font-weight: 400;
+  color: #9d182b;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-26 {
+  top: 66px;
+  left: 510px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 49px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-27 {
+  top: 1239px;
+  left: 182px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-28 {
+  top: 5116px;
+  left: 182px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-29 {
+  top: 1239px;
+  left: 502px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-30 {
+  top: 5116px;
+  left: 502px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .element {
+  width: 1110px;
+  top: 2652px;
+  left: 171px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 23px;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .span {
+  line-height: 42px;
+}
+
+.frame .text-wrapper-31 {
+  line-height: 30px;
+}
+
+.frame .text-wrapper-32 {
+  line-height: 26px;
+}
+
+.frame .text-wrapper-33 {
+  width: 1110px;
+  top: 3428px;
+  left: 154px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-34 {
+  width: 1110px;
+  top: 4037px;
+  left: 154px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-35 {
+  top: 1239px;
+  left: 818px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-36 {
+  top: 5116px;
+  left: 818px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-37 {
+  top: 1239px;
+  left: 1177px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .text-wrapper-38 {
+  top: 5116px;
+  left: 1177px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .star {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 1034px;
+  left: 815px;
+}
+
+.frame .star-2 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 4911px;
+  left: 815px;
+}
+
+.frame .star-3 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 1034px;
+  left: 474px;
+}
+
+.frame .star-4 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 4911px;
+  left: 474px;
+}
+
+.frame .star-5 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 1034px;
+  left: 133px;
+}
+
+.frame .star-6 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 4911px;
+  left: 133px;
+}
+
+.frame .star-7 {
+  position: absolute;
+  width: 52px;
+  height: 50px;
+  top: 2466px;
+  left: 700px;
+}
+
+.frame .star-8 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 1034px;
+  left: 1156px;
+}
+
+.frame .star-9 {
+  position: absolute;
+  width: 179px;
+  height: 171px;
+  top: 4911px;
+  left: 1156px;
+}
+
+.frame .text-wrapper-39 {
+  top: 2411px;
+  left: 314px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #9d182b;
+  font-size: 31px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+}
+
+.frame .group {
+  position: absolute;
+  width: 37px;
+  height: 32px;
+  top: 2403px;
+  left: 258px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 49px;
+  height: 44px;
+  top: -6px;
+  left: -6px;
+}
+
+.frame .vector-2 {
+  /* Стили переопределены в компоненте */
+}
+
+.frame .vector-3 {
+  /* Стили переопределены в компоненте */
+}
+
+.frame .image-2 {
+  /* Стили переопределены в компоненте */
+}
+
+.frame .image-4 {
+  /* Стили переопределены в компоненте */
+}
+
+.frame .vector-4 {
+  /* Стили переопределены в компоненте */
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 635px;
+  height: 106px;
+  top: 4682px;
+  left: 402px;
+  background-image: url(/assets/Rectangle\ 4.svg);
+  background-size: 100% 100%;
+  border-radius: 12px;
+}
+
+.frame .text-wrapper-40 {
+  width: 338px;
+  top: 37px;
+  left: 149px;
+  font-family: "Borsok-Regular", Helvetica;
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: absolute;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Hover эффекты */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Кастомные градиенты */
+.gradient-bg {
+  background: linear-gradient(135deg, #f9cbd6 0%, #ff94af 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #9d182b, #ff94af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} 
+
+/* =========================
+   МОБИЛЬНЫЕ СТИЛИ
+   ========================= */
+
+/* Медиа-запросы для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  
+  /* Основной контейнер */
+  .frame .div {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Hero секция */
+  .frame .overlap {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .frame .image {
+    position: relative !important;
+    width: 90% !important;
+    height: auto !important;
+    max-width: 350px !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .frame .text-wrapper {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 60px !important;
+    text-shadow: 5px 2px 0px #ff94af !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .frame .ellipse {
+    position: absolute !important;
+    width: 100px !important;
+    height: 100px !important;
+    top: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+  }
+
+  .frame .p {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .frame .text-wrapper-5 {
+    position: absolute !important;
+    top: 25px !important;
+    right: 25px !important;
+    left: auto !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    text-align: center;
+    width: 60px;
+  }
+
+  /* Социальные ссылки */
+  .frame .text-wrapper-2,
+  .frame .text-wrapper-3,
+  .frame .text-wrapper-4 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Заголовки секций */
+  .frame .text-wrapper-6,
+  .frame .text-wrapper-7,
+  .frame .text-wrapper-8,
+  .frame .text-wrapper-9 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    font-size: 36px !important;
+    letter-spacing: 2px !important;
+    text-align: center;
+    margin: 40px 0 20px 0;
+  }
+
+  /* Прайс-блоки */
+  .frame .overlap-group,
+  .frame .overlap-2,
+  .frame .overlap-3 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 95% !important;
+    max-width: 350px !important;
+    height: auto !important;
+    margin: 20px auto;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Текст внутри прайс-блоков */
+  .frame .text-wrapper-10,
+  .frame .text-wrapper-11,
+  .frame .text-wrapper-12,
+  .frame .text-wrapper-20,
+  .frame .text-wrapper-21,
+  .frame .text-wrapper-22 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 20px !important;
+    margin: 10px 0 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .frame .text-wrapper-13,
+  .frame .text-wrapper-14,
+  .frame .text-wrapper-15,
+  .frame .text-wrapper-23,
+  .frame .text-wrapper-24,
+  .frame .text-wrapper-25 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 18px !important;
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .frame .text-wrapper-16,
+  .frame .text-wrapper-26 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 24px !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Дополнительно блок */
+  .frame .text-wrapper-17,
+  .frame .text-wrapper-18 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 18px !important;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .frame .text-wrapper-19 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 24px !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Навигационные элементы */
+  .frame .text-wrapper-27,
+  .frame .text-wrapper-28,
+  .frame .text-wrapper-29,
+  .frame .text-wrapper-30,
+  .frame .text-wrapper-35,
+  .frame .text-wrapper-36,
+  .frame .text-wrapper-37,
+  .frame .text-wrapper-38 {
+    display: none !important;
+  }
+
+  /* Условия текст */
+  .frame .element {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 95% !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  /* Портфолио заголовки */
+  .frame .text-wrapper-33,
+  .frame .text-wrapper-34 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    font-size: 22px !important;
+    line-height: 26px !important;
+    text-align: center;
+    margin: 30px 0 15px 0;
+  }
+
+  /* Звезды - скрываем на мобильных */
+  .frame .star,
+  .frame .star-2,
+  .frame .star-3,
+  .frame .star-4,
+  .frame .star-5,
+  .frame .star-6,
+  .frame .star-7,
+  .frame .star-8,
+  .frame .star-9 {
+    display: none !important;
+  }
+
+  /* НЕ РИСУЮ текст */
+  .frame .text-wrapper-39 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 18px !important;
+    text-align: center;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  /* X иконка */
+  .frame .group {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame .vector {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  /* Кнопка заказать */
+  .frame .div-wrapper {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 95% !important;
+    max-width: 300px !important;
+    height: 80px !important;
+    margin: 40px auto !important;
+    border-radius: 40px !important;
+  }
+
+  /* Скрытие overflow для предотвращения горизонтального скролла */
+  body {
+    overflow-x: hidden !important;
+  }
+
+  /* Дополнительные стили для улучшения мобильного опыта */
+  .frame {
+    overflow-x: hidden !important;
+  }
+
+  /* Убеждаемся что все элементы находятся внутри экрана */
+  .frame .div * {
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Обеспечиваем правильное позиционирование всех текстовых элементов */
+  .frame .div > *:not(.overlap):not([style*="position: absolute"][style*="3517px"]):not([style*="position: absolute"][style*="4106px"]) {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    margin: 10px auto !important;
+    width: auto !important;
+    max-width: 95% !important;
+    text-align: center !important;
+  }
+
+  /* Специальная обработка для модального окна на мобильных */
+  .frame div[style*="position: fixed"] {
+    z-index: 1000 !important;
+  }
+
+  /* Дополнительное центрирование для элементов навигации */
+  .frame .text-wrapper-6 {
+    margin-top: 20px !important;
+  }
+
+  /* Слайдеры - настройка для мобильных */
+  /* Контейнеры слайдеров на мобильных */
+  .frame div[style*="position: absolute"][style*="3517px"],
+  .frame div[style*="position: absolute"][style*="4106px"] {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    height: 250px !important;
+    width: 100% !important;
+    margin: 30px 0;
+  }
+
+  .frame .swiper-container {
+    height: 250px !important;
+    margin: 20px 0;
+  }
+
+  .frame .swiper {
+    height: 250px !important;
+    padding: 0 15px !important;
+  }
+
+  .frame .swiper-slide {
+    height: 250px !important;
+    width: 100% !important;
+  }
+
+  .frame .swiper-slide img {
+    height: 100% !important;
+    width: auto !important;
+    max-width: 90vw !important;
+    object-fit: contain !important;
+  }
+
+  /* Кастомные стрелки слайдера для мобильных */
+  .custom-swiper-button-prev,
+  .custom-swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .custom-swiper-button-prev {
+    left: 10px !important;
+  }
+
+  .custom-swiper-button-next {
+    right: 10px !important;
+  }
+
+  .custom-swiper-button-prev img,
+  .custom-swiper-button-next img {
+    width: 25px !important;
+    height: 30px !important;
+  }
+
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  
+  .frame .text-wrapper {
+    font-size: 45px !important;
+  }
+
+  .frame .text-wrapper-6,
+  .frame .text-wrapper-7,
+  .frame .text-wrapper-8,
+  .frame .text-wrapper-9 {
+    font-size: 28px !important;
+  }
+
+  .frame .overlap-group,
+  .frame .overlap-2,
+  .frame .overlap-3 {
+    padding: 15px;
+  }
+
+  .frame .text-wrapper-16,
+  .frame .text-wrapper-26,
+  .frame .text-wrapper-19 {
+    font-size: 20px !important;
+  }
+
+  .frame .text-wrapper-10,
+  .frame .text-wrapper-11,
+  .frame .text-wrapper-12,
+  .frame .text-wrapper-20,
+  .frame .text-wrapper-21,
+  .frame .text-wrapper-22 {
+    font-size: 18px !important;
+  }
+
+  .frame .text-wrapper-33,
+  .frame .text-wrapper-34 {
+    font-size: 20px !important;
+  }
+
+  .frame .div-wrapper {
+    height: 70px !important;
+  }
+
+  /* Улучшенное центрирование для очень маленьких экранов */
+  .frame .div {
+    padding: 0 10px !important;
+  }
+
+  .frame .overlap {
+    padding: 15px 0 !important;
+  }
+
+  .frame .p {
+    max-width: 280px !important;
+  }
+
+} 
